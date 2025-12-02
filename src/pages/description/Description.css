@@ -1,0 +1,41 @@
+.details{
+    margin-top: 20px;
+    text-align: left;
+    line-height: 1.5em;
+    font-style: italic;
+}
+.page-title{
+    text-align: center;
+    font-size: 36px;
+    margin-top: 20px;
+
+}
+.events{
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: center;
+    background: #fff;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    border: 2px;
+    border-radius: 10px;
+}
+.events ul{
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.events li{
+    list-style-type: none;
+    margin-right: 10px;
+    color: #777;
+}
+.events li::after{
+    content: ",";
+}
+.events li:last-child::after{
+    content: ",";
+}

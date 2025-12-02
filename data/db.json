@@ -1,0 +1,161 @@
+{
+  "trips": [
+    {
+      "id": "1",
+      "title": "React Meetup",
+      "date": "2025-12-01",
+      "time": "18:00",
+      "location": "Online",
+      "category": "Tech",
+      "host": "DevCommunity India",
+      "description": "A detailed beginner-friendly session introducing the fundamentals of React. This meetup will cover components, props, state, and Hooks through practical demonstrations. Attendees will learn how React updates the UI efficiently using the virtual DOM and how to structure their first React project. Ideal for students and aspiring developers looking to build modern, fast, and scalable web applications.",
+      "attendees": 100,
+      "topics": [
+        "React Basics",
+        "Components & Props",
+        "State & Hooks",
+        "Virtual DOM",
+        "Project Structure"
+      ]
+    },
+    {
+      "id": "4",
+      "title": "College Fest - Battle of Bands",
+      "date": "2025-11-25",
+      "time": "20:00",
+      "location": "Pune",
+      "category": "Music",
+      "host": "Cultural Club, Pune University",
+      "description": "A high-energy live music competition where the best college bands from across Maharashtra take the stage. Expect electrifying performances featuring rock, indie, fusion, and metal genres. The night includes engaging crowd interactions, LED stage lighting, and professional sound setups that elevate the atmosphere. A must-attend event for music lovers and students wanting an unforgettable cultural fest experience.",
+      "attendees": 150,
+      "topics": [
+        "Live Music",
+        "Rock & Indie",
+        "Fusion Music",
+        "Band Performances",
+        "Stage Lighting & Sound"
+      ]
+    },
+    {
+      "id": "3",
+      "title": "AI & Machine Learning Workshop",
+      "date": "2025-12-10",
+      "time": "10:30",
+      "location": "Mumbai",
+      "category": "Tech",
+      "host": "AI Innovators Club",
+      "description": "A hands-on workshop covering core concepts of artificial intelligence and machine learning. Participants will learn how to prepare datasets, visualize data, train models, and evaluate algorithm performance. The workshop includes real-world examples using supervised and unsupervised learning techniques. By the end of the session, attendees will build and test their first ML model while receiving guidance from experienced AI mentors.",
+      "attendees": 35,
+      "topics": [
+        "AI Basics",
+        "Data Preprocessing",
+        "Machine Learning Algorithms",
+        "Model Training",
+        "Supervised vs Unsupervised Learning",
+        "Model Evaluation"
+      ]
+    },
+    {
+      "id": "2",
+      "title": "React Meetup",
+      "date": "2025-12-01",
+      "time": "18:00",
+      "location": "Online",
+      "category": "Tech",
+      "host": "CodeLearners Hub",
+      "description": "An interactive React learning meetup designed for beginners who want to understand the core concepts of React. This session includes live coding examples, reusable component development, and hands-on practice with state management. Participants will also explore how React handles rendering, event handling, and conditional UI updates. A perfect event for anyone starting their frontend development journey.",
+      "attendees": 20,
+      "topics": [
+        "Reusable Components",
+        "State Management",
+        "Event Handling",
+        "Conditional Rendering",
+        "JSX Deep Dive"
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Startup Networking Night",
+      "date": "2025-12-05",
+      "time": "19:30",
+      "location": "Bangalore",
+      "category": "Business",
+      "host": "Startup Hub India",
+      "description": "An exclusive networking event bringing together startup founders, developers, mentors, and investors. Participants will have opportunities to pitch ideas, discuss business strategies, and explore potential partnerships. The event includes lightning talks, open mic sessions for founders, and expert discussions on scaling, funding, and product design. A great platform for budding entrepreneurs to build connections and gain industry insights.",
+      "attendees": 60,
+      "topics": [
+        "Startup Pitching",
+        "Business Strategy",
+        "Funding & Investment",
+        "Networking",
+        "Product Design",
+        "Entrepreneurship"
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Frontend Dev Bootcamp",
+      "date": "2025-12-12",
+      "time": "14:00",
+      "location": "Hyderabad",
+      "category": "Tech",
+      "host": "CodeCraft Academy",
+      "description": "A hands-on frontend development bootcamp covering HTML, CSS, JavaScript, and modern UI best practices. Participants will build real-world responsive layouts, work with APIs, and optimize their code for performance. Mentors will guide attendees through debugging, browser tools, and frontend career pathways.",
+      "attendees": 80,
+      "topics": [
+        "HTML & CSS Basics",
+        "JavaScript Essentials",
+        "Responsive UI",
+        "API Integration",
+        "Debugging Tools"
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Cybersecurity Awareness Workshop",
+      "date": "2025-12-18",
+      "time": "11:00",
+      "location": "Delhi",
+      "category": "Security",
+      "host": "SafeNet Labs",
+      "description": "This workshop covers modern cybersecurity threats, password management, phishing attacks, and real-time hacking demonstrations. Attendees will learn how to protect personal and organizational data, understand encryption basics, and practice safe browsing habits.",
+      "attendees": 120,
+      "topics": [
+        "Threat Detection",
+        "Phishing Awareness",
+        "Encryption Basics",
+        "Password Security",
+        "Safe Browsing"
+      ]
+    },
+    {
+      "id": "8",
+      "title": "AI for Beginners",
+      "date": "2025-12-20",
+      "time": "16:00",
+      "location": "Chennai",
+      "category": "Tech",
+      "host": "NextGen AI Hub",
+      "description": "An introductory workshop designed for absolute beginners in Artificial Intelligence. The session covers basic AI concepts, neural networks, real-life applications, and a demo of training a simple ML model. Great for students exploring career options in AI and data science.",
+      "attendees": 45,
+      "topics": [
+        "AI Basics",
+        "Neural Networks Intro",
+        "Real-World AI Applications",
+        "Dataset Handling",
+        "Simple ML Model Training"
+      ]
+    },
+    {
+      "id": "f0c3",
+      "title": "Digital Marketing Summit a new event",
+      "date": "2025-12-09",
+      "description": "A full-day summit focusing on digital marketing trends, SEO strategies, social media growth, and content planning. Industry experts will discuss real case studies, tools, and growth hacks for building a strong online brand presence.\",",
+      "topics": [
+        "Content marketing",
+        "Brand Building",
+        "Analytics Tools"
+      ]
+    }
+  ]
+}
