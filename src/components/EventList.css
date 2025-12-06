@@ -54,6 +54,14 @@ gap: 100px;
 
 }
 
+.delete{
+    position: absolute;
+    cursor: pointer;
+    margin-left: 400px;
+    
+
+}
+
 .arrange{
     display: flex;
     gap:200px;

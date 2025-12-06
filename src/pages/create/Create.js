@@ -2,8 +2,7 @@ import { useState}  from 'react';
 import { useEffect} from 'react';
 import{useNavigate} from 'react-router-dom';
 import {useRef} from 'react';
-import {useFetch} from '../../hooks/useFetch';
-
+import { projectFirestore } from '../../firebase/config' 
 import './Create.css'
 function Create() {
   const [title,setTitle]= useState('');
@@ -15,11 +14,17 @@ function Create() {
 
   const topicInput= useRef(null);
 
-  const {postData,data,error}=useFetch('http://localhost:3000/trips','POST');
 
-  const handleSubmit=(e)=>{
+  const handleSubmit= async(e)=>{
     e.preventDefault();
-    postData({title,date,description,topics});
+    const doc = ({title , date , description , topics});
+
+    try{
+    await projectFirestore.collection('trips').add(doc)
+    navigate('/')
+    }catch(err){
+      console.log(err)
+    }
   }
 
   const handleAdd=(e)=>{
@@ -33,11 +38,7 @@ function Create() {
     topicInput.current.focus();
   }
 
-  useEffect(()=>{
-    if(data){
-      navigate("/")
-    }
-  },[data])
+ 
 
   return (
     <div className='create'>

@@ -1,13 +1,30 @@
 
-import {useFetch} from '../../hooks/useFetch';
+import {useEffect} from 'react'
 import {useParams} from 'react-router-dom';
 import './Description.css';
+import { useState } from 'react';
+import { projectFirestore } from '../../firebase/config';
 function Description() {
     const {id} = useParams();
-    const url = `http://localhost:3000/trips/`+id;
-  
-    const{error,data:trip,isPending,}= useFetch(url);
+    const [trip,setTrip] = useState(null)
+    const [isPending,setIsPending] = useState(false)
+    const [error,setError] = useState(false)
 
+   useEffect(()=>{
+    setIsPending(true);
+
+    projectFirestore.collection('trips').doc(id).get().then((doc)=>{
+      if(doc.exists){
+        setIsPending(false)
+        setTrip(doc.data())
+      }else{
+        setIsPending(false)
+        setError("Could not find Event")
+      }
+    })
+
+   },[id])
+  
   return (
     <div className='events'>
       {error && <p className='error'>{error}</p>}
