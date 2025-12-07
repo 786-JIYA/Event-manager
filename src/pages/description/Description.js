@@ -13,7 +13,7 @@ function Description() {
    useEffect(()=>{
     setIsPending(true);
 
-    projectFirestore.collection('trips').doc(id).get().then((doc)=>{
+    const unsub = projectFirestore.collection('trips').doc(id).onSnapshot((doc)=>{
       if(doc.exists){
         setIsPending(false)
         setTrip(doc.data())
@@ -23,7 +23,15 @@ function Description() {
       }
     })
 
+    return () => unsub()
+
    },[id])
+
+   const handleClick=(()=>{
+    projectFirestore.collection('trips').doc(id).update({
+      title:'New Title Here'
+    })
+   })
   
   return (
     <div className='events'>
@@ -41,7 +49,8 @@ function Description() {
           <p className='detail'>{trip.description}</p>
         </>
       )}
-    </div>
+      <button className='button' onClick={()=>handleClick()}>Update me</button>
+      </div>
   )
 }
 export default Description
